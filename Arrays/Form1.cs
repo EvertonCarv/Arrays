@@ -38,5 +38,31 @@ namespace Arrays
              */
 
         }
+
+        private void btnVetorTextos_Click(object sender, EventArgs e)
+        {
+            string[] semana = new string[7];
+            semana[0] = "Domingo";
+            semana[1] = "Segunda-Feira";
+            semana[2] = "Terça-Feira";
+            semana[3] = "Quarta-Feira";
+            semana[4] = "Quinta-Feira";
+            semana[5] = "Sexta-Feira";
+            semana[6] = "Sábado";
+
+            string valor = semana[1];
+            for (int index = 0; index < 7; index++)
+                MessageBox.Show(semana[index].ToString(), "Array");
+
+            /*Declarar e instanciar vetor
+             * Atribuição de valores de acordo com cada índice,
+             * Aqui no caso são os dias da semana (String)
+             * Declara variável "valor" para acessar o vetor
+             * Por se tratar de string não será necessário ordenar
+             * Comando for - Percorre o vetor em cada índice.
+             * Condição Para index menor que 7 (de 0 a 6), ele exibe uma msg com o vetor na,
+             * MessageBox, ou seja cada dia da semana.*/
+
+        }
     }
 }
